@@ -18,15 +18,21 @@ models:
     staging:
       schema: staging
       materialized: table
-      tag: ['staging']
+      tags: ['staging']
 
     intermediate:  
       materialized: table
-      tag: ['intermediate']   
+      tags: ['intermediate']   
     marts:
       schema: marts
       materialized: table
-      tag: ['marts']   
+      tags: ['marts']   
+      
+seeds:
+  dbt_exemple:
+  schema: seeds
+  tags: ['seeds']   
+
 
 
 

@@ -5,6 +5,6 @@ dbt_example:
       type: bigquery
       method: service-account
       project: 'my-project-453420'
-      dataset: 'dbt_dw'
+      dataset: "{{ env_var('DBT_NAME', 'dbt_dw') }}"
       threads: 4
       keyfile: /mnt/c/Users/glmat/OneDrive/Documents/WWW/Aprendendo/Curso dbt Core/Chave/my-project-453420-6e79f719ffc2.json
