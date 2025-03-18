@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: fct_vendas
+    description: "Fatos de vendas da empresa"
+
+    colums:
+      - name: mes
+        description: "Mês de vendas"
+        tests:
+          - not_null
+          - accepted_values:
+            values: ["jan", "fev", "mar", "abr", "mai", "jun", "ago", "set", "out", "nov", "dez"]
+
+      - name: ano
+        description: "Ano de venda"
+
+      - name: total_frete
+        description: "Total de frete"
+        tests:
+          - not_null
