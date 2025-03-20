@@ -1,9 +1,6 @@
-
 name: 'dbt_example'
 version: '1.0.0'
-
 profile: 'dbt_example'
-
 model-paths: ["models"]
 analysis-paths: ["analyses"]
 test-paths: ["tests"]
